@@ -8,15 +8,15 @@ import hashlib
 def add_user(user, pwd, typevar):
     """Adiciona um usuario
 
-    :param user: Nome do ususario. 
-    :type user: str. 
-    :param pwd: Senha. 
-    :type state: str. 
-    :param typevar: tipo do usuario. 
-    :type state: str. 
-    :returns: void. 
+    :param user: Nome do ususario.
+    :type user: str.
+    :param pwd: Senha.
+    :type state: str.
+    :param typevar: tipo do usuario.
+    :type state: str.
+    :returns: void.
 
-    """ 
+    """
     conn = sqlite3.connect('quiz.db')
     cursor = conn.cursor()
     cursor.execute(
